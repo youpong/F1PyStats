@@ -33,6 +33,10 @@ def conv_sec(duration: str) -> float:
     The duration time format is "hh:mm:ss.sss". hh, mm and fractional part can
     be omitted.
 
+    Args
+    ----
+    duration
+
     Examples
     --------
     >>> conv_sec("58.79")       # 1974 R9 Niki Lauda Qualify TIme

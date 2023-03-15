@@ -40,7 +40,9 @@ jobs:
           key: venv-${{ hashFiles('**/poetry.lock') }}
       - name: Install dependencies
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
-        run: poetry install --no-interaction --all-extras
+        run: poetry install --no-root --no-interaction --all-extras
+      - name: Install our projects(w/o cache)
+        run: poetry install --only-root
       - name: Build
         run: poetry run sphinx-build -M html docs docs/_build
       - name: Setup Pages
