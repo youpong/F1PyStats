@@ -37,7 +37,7 @@ def conv_sec(duration: str) -> float:
     --------
     >>> conv_sec("58.79")       # 1974 R9 Niki Lauda Qualify TIme
     58.79 
-    >>> conv_sec("1:33:56.736") # 2003 R1 Max Verstappen Race Time
+    >>> conv_sec("1:33:56.736") # 2023 R1 Max Verstappen Race Time
     5636.736
     """
 
